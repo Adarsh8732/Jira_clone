@@ -35,7 +35,7 @@ body{
     box-shadow: 0 .25rem 1rem;
 }
 
-.lightpink::after{
+.filter-color::after{
     content:"";
     height: 100%;
     width: 100%;
@@ -51,7 +51,20 @@ body{
 .lightpink::after{
     background-color:pink;
 }
-.lightpink:hover::after{
+.lightgreen::after{
+    background-color:lightgreen;
+    
+}
+.lightblue::after{
+    
+    background-color:lightblue;
+}
+.black::after{
+    background-color:gray;
+
+}
+.filter-color:hover::after
+{
     transform:scale(2);
      /* scaleY(2); */
     opacity: 0;
@@ -92,17 +105,17 @@ body{
     height:100%;
     width:25%;
     /* background-color: red; */
-border-radius: 0.2rem;
-/* 3.2 */
-display: flex;
-justify-content: center;
-align-items: center;
+    border-radius: 0.2rem;
+    /* 3.2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .filter-color{
     /* 3.1 in elements ko filtercontainer -> center */
-height:30%;
-width:50%;
-border-radius:2px;
+    height:30%;
+    width:50%;
+    border-radius:2px;
 }
 .action-container{
     /* 1.2 */
@@ -120,6 +133,16 @@ border-radius:2px;
 }
 .fas{
     font-size:x-large;
+}
+.fas:hover{
+    transform: translateY(-.1rem);
+    /* box-shadow: 0 .5rem 2rem; */
+    transform:scale(1.3);
+} 
+.fas:active{
+    transform: translateY(-.05rem);
+    /* box-shadow: 0 .25rem 1rem; */
+    transform: translate(1.2);
 }
 .fa{
     font-size: xx-large;
@@ -180,21 +203,21 @@ border: 5px solid green;
     padding-bottom: 1.2rem;
 }
 .modal_filters{
-width:60%;
-height: 12%;
+    width:60%;
+    height: 12%;
 }
 .border{
     border:2px solid white;
 }
 
 .ticket-container{
-height: 10rem;    
+    height: 10rem;      
     width:15rem;
     background-color:white;
     
 }
 .ticket-color{
-height:8%;
+    height:8%;
 /* background-color:black; */
 }
 .ticket_sub-container{
